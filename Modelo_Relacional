@@ -1,0 +1,35 @@
+Produtor(ID<, CNPJ/CPF, #DATA_NASCIMENTO/FUNDACAO,#MATRICULA, #IE, #LINHA)
+
+Coleta_Leite(Data_Coleta, #CNPJ/CPF_Produtor, #CNPJ/CPF_Transportador, Quantidade_Coletada)
+
+Freteiro/Transportador(Linha, Veiculo, # CNPJ, #Data_Nascimento/Fundacao, Matricula, IE)
+
+Ordem_Producao(Numero_Ordem, #CNPJ_Industria, #ID_Produto , Quantidade, Data )
+
+Industria(#CNPJ/CPF, Capacidade_Recebimento, Capacidade_Producao, #Data_Fundacao, #Matricula, #IE)
+
+Produto(ID_Produto, Tipo_Produto, Unidade_Medida, Armazenagem_Padrao, TE_Padrao, TS_Padrao, Descricao, Quantidade_Estoque)
+
+Cliente/Fornecedor(Codigo_Cliente, #CNPJ/CPF, #Data_Nascimento/Fundacao, #Matricula)
+
+Marcacao_Leite(#CNPJ/CPF, Leite, Mês/Ano, Quantidade, #Data_Coleta)
+
+Pedidos_Venda(Numero_Pedido, #Codigo_Cliente, #ID_Produto, #CNPJ_Industria, Valor_Produto, Quantidade_Produto, Data_Hora)
+
+Get_Informacoes(#CNPJ/CPF, #ID_Contato, #ID_Endereco, #ID_Fina/Venda, Perfil)
+
+Documento(CNPJ/CPF, Nome/Razao_Social, Nome_Fantasia, Data_Nascimento/Funcadao, Matricula, IE)
+
+Contato(ID, Telefone, Email)
+
+Endereco(ID, Rua, Numero, Complemento, Bairro, Municipio, Estado)
+
+Financeiro/Vendas(ID, Titulo, Condicao_Pagamento, Bloqueio, Desconto, Representante, Banco, Transportador, Ultima_Compra, Limite_Credito, Maior_Atraso, Ultima_compra)
+
+Pedidos_Compra(Numero_Pedido, #Codigo_Fornecedor, #ID_Produto, #CNPJ_Industria, Valor_Produto, Quantidade_Produto, Data_Hora)
+
+
+
+
+ 
+ 
